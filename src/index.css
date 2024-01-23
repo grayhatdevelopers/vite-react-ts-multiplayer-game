@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 
+In games, you usually fix the screen and don't allow zooming, pinching, tap-and-hold etc.
+We can release those permissions for special cases.
+*/
+* {
+    user-select: none;
+    caret-shape: block;
+    -webkit-tap-highlight-color: transparent;
+    font-smooth: always;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+img {
+    pointer-events: none;
+}

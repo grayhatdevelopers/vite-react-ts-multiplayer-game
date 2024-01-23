@@ -1,0 +1,10 @@
+{
+    "rewrites": [
+        {
+            "source": "/.wellknown/assetlinks.json",
+            "destination": "/.wellknown/assetlinks.json"
+        },
+        { "source": "/(.*)", "destination": "/" }
+    ],
+    "trailingSlash": true
+}

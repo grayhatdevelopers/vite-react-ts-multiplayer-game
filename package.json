@@ -1,0 +1,72 @@
+{
+    "name": "%GAME_NAME%",
+    "version": "0.1.0",
+    "private": true,
+    "homepage": "",
+    "dependencies": {
+        "@testing-library/jest-dom": "^5.17.0",
+        "@testing-library/react": "^13.4.0",
+        "@testing-library/user-event": "^13.5.0",
+        "@vitejs/plugin-react-swc": "^3.5.0",
+        "local-ip-address": "^1.0.0",
+        "localforage": "^1.10.0",
+        "lodash": "^4.17.21",
+        "node-sass": "^7.0.3",
+        "playroomkit": "^0.0.55",
+        "prop-types": "^15.8.1",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "react-router-dom": "^6.21.1",
+        "vite": "^4.5.1",
+        "vite-plugin-svgr": "^4.2.0",
+        "vite-tsconfig-paths": "^4.2.2",
+        "web-vitals": "^2.1.4"
+    },
+    "scripts": {
+        "dev": "cross-env VITE_LOCAL_IP_ADDRESS=`node ./src/utils/get-ip-address.js` NODE_ENV=development pnpm start --host",
+        "start": "vite",
+        "build": "npx tsc && vite build",
+        "serve": "vite preview",
+        "lint": "npx eslint .",
+        "optimize-assets:images": "cd ./src/assets/img && ../../utils/compress-images.sh",
+        "optimize-assets:audio": "cd ./src/assets/sfx && ../../utils/compress-audio.sh"
+    },
+    "eslintConfig": {
+        "extends": [
+            "react-app",
+            "react-app/jest"
+        ]
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "devDependencies": {
+        "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+        "@types/node": "^20.10.6",
+        "@typescript-eslint/eslint-plugin": "^6.19.1",
+        "@typescript-eslint/parser": "^6.19.1",
+        "autoprefixer": "^10.4.16",
+        "cross-env": "^7.0.3",
+        "eslint": "^8.56.0",
+        "eslint-config-react-app": "^7.0.1",
+        "eslint-plugin-react": "^7.33.2",
+        "postcss": "^8.4.32",
+        "prettier": "^3.1.1",
+        "sharp": "^0.33.1",
+        "svgo": "^3.2.0",
+        "tailwindcss": "^3.4.0",
+        "typescript": "5.3.3",
+        "vite-plugin-eslint": "^1.8.1",
+        "vite-plugin-image-optimizer": "^1.1.7",
+        "vite-plugin-pwa": "^0.17.4"
+    }
+}
