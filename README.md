@@ -2,6 +2,8 @@
 
 A bootstrapped game template with multiplayer with PlayroomKit, built with multiplayer routing in mind.
 
+Best used with [create-multiplayer-game](https://github.com/grayhatdevelopers/create-multiplayer-game).
+
 ## Available Scripts
 
 In the project directory, you can run:
