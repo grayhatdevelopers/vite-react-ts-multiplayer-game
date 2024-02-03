@@ -3,10 +3,7 @@ import FullPage from '../components/FullPage';
 const LoadingRoom = () => {
 	return (
 		<FullPage
-			style={{
-				backgroundColor: '#000',
-				color: 'white'
-			}}
+			className="bg-black text-white"
 		>
             Loading room...
 		</FullPage>

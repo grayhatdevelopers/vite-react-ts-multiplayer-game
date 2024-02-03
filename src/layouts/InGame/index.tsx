@@ -5,10 +5,7 @@ const InGameLayout = () => {
 	return (
 		<FullPage
 			// className='content'
-			style={{
-				backgroundColor: 'red',
-				marginTop: 'env(safe-area-inset-top)',
-			}}
+			className="bg-red-500 mt-safe"
 		>
 			<Outlet />
 		</FullPage>

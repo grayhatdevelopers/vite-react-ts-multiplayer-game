@@ -30,8 +30,9 @@ const Root = () => {
 							<>
 								<div
 									hidden
-									style={{ position: 'absolute' }}
+									className='absolute'
 								/>
+								{/* eslint-disable-next-line react/jsx-pascal-case */}
 								<UNSAFE_LocationContext.Provider
 									value={null}
 								>
