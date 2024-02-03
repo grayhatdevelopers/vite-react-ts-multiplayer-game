@@ -22,16 +22,7 @@ const MemoryRouterContextWrapper = ({ children }) => {
         }
     }, [])
 
-    return (
-        <div
-            ref={ref}
-            style={{
-                width: '100%',
-                height: '100%',
-                overflow: 'hidden',
-            }}
-        />
-    )
+    return <div ref={ref} className="w-full h-full overflow-hidden" />
 }
 
 export default MemoryRouterContextWrapper

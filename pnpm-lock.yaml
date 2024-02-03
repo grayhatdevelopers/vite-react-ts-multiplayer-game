@@ -100,6 +100,9 @@ devDependencies:
   tailwindcss:
     specifier: ^3.4.0
     version: 3.4.1
+  tailwindcss-safe-area:
+    specifier: ^0.4.1
+    version: 0.4.1
   typescript:
     specifier: 5.3.3
     version: 5.3.3
@@ -6948,6 +6951,11 @@ packages:
       css-what: 6.1.0
       csso: 5.0.5
       picocolors: 1.0.0
+    dev: true
+
+  /tailwindcss-safe-area@0.4.1:
+    resolution: {integrity: sha512-6EOe8D39F8N8poKWkeOcIt2SchyJ8CVfm/k5iZak6+QgOzii0TukNIfItdGbf7ylVtq3CF2CK/Oxo5xvtLwVmQ==}
+    engines: {node: '>=16'}
     dev: true
 
   /tailwindcss@3.4.1:
