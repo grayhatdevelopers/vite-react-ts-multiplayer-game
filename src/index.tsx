@@ -1,5 +1,7 @@
 import './index.css';
 
+import { useState, useEffect } from 'react'
+
 import { GameRouter } from './modules/gameRouter';
 import { MemoryRouter } from 'react-router-dom';
 import React from 'react';
@@ -12,8 +14,22 @@ import {
 } from 'react-router-dom';
 
 import CreateOrJoinRoom from './screens/CreateOrJoinRoom';
+import { preloadAssets } from './utils/preload';
+import LoadingGame from './screens/LoadingGame';
 
 const Root = () => {
+
+	const [isLoadingAssets, setIsLoadingAssets] = useState(true)
+
+	const _preloadAssets = async () => {
+		await preloadAssets()
+		setIsLoadingAssets(false)
+	}
+
+	useEffect(() => {
+		_preloadAssets()
+	}, [])
+
 	return (
 		<>
 			<BrowserRouter>
@@ -21,7 +37,7 @@ const Root = () => {
 					<Route
 						path=""
 						element={
-							<CreateOrJoinRoom />
+							isLoadingAssets ? <LoadingGame /> : <CreateOrJoinRoom />
 						}
 					/>
 					<Route
