@@ -4,6 +4,18 @@ A bootstrapped game template with multiplayer with PlayroomKit, built with multi
 
 Best used with [create-multiplayer-game](https://github.com/grayhatdevelopers/create-multiplayer-game).
 
+## Features
+- **🎮 Multiplayer, out-of-box**: Batteries-included for multiplayer, using [PlayroomKit](https://docs.joinplayroom.com/setup). If the host navigates to a screen, **everyone navigates**! (This, of course, is controlled through a variable called `broadcast`. If broadcast is false, only the user themselves navigate to the route)
+- **🚧 Silent routing**: This game follows "silent" routing patterns. The game's phases are controlled by the route, however the route isn't visible to the player (it's stored in memory), giving a nice feel. Players only see `/play`.
+- **🐡 PWA Compatible**: Using [PWABuilder](https://www.pwabuilder.com/), deploy this game to App Store, Play Store, Microsoft Store, and Quest, with just a bit of configuration!
+- **⚡️ Asset Preloading**: Integrated some basic asset loading, to prevent players from seeing loading screens for images.
+- **✨ Asset Optimization and Caching**: Integrated some heavy PWA caching to ensure the game doesn't need to do too many unnecessary network calls. Also added some image optimization to compress images before builds.
+- **📺 Template screens**: This template comes with some nice screens which you might want to have in your game. Completely unstyled.
+
+For reference on how a template like this can turn into a final product, check out:
+- [Meme, Chat, Robots!](memechatrobots.grayhat.studio)
+- [Death by AI](deathbyai.gg)
+
 ## Available Scripts
 
 In the project directory, you can run:
