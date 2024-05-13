@@ -1,6 +1,6 @@
 {
-  "short_name": "%GAME_NAME%",
-  "name": "%GAME_NAME%",
+  "short_name": "my-stupid-game",
+  "name": "my-stupid-game",
   "description": "Play this game with friends and family.",
   "icons": [
     {
@@ -54,7 +54,7 @@
     {
       "name": "Open a new game",
       "url": "/",
-      "description": "Quickly spin up a game of %GAME_NAME%!",
+      "description": "Quickly spin up a game of my-stupid-game!",
       "icons": [
         {
           "src": "/manifest-icon-512.maskable.png",

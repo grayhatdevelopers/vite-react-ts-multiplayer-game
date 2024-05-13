@@ -1,4 +1,4 @@
-# %GAME_NAME%
+# my-stupid-game
 
 A bootstrapped game template with multiplayer with PlayroomKit, built with multiplayer routing in mind.
 
