@@ -13,8 +13,8 @@ Best used with [create-multiplayer-game](https://github.com/grayhatdevelopers/cr
 - **📺 Template screens**: This template comes with some nice screens which you might want to have in your game. Completely unstyled.
 
 For reference on how a template like this can turn into a final product, check out:
-- [Meme, Chat, Robots!](memechatrobots.grayhat.studio)
-- [Death by AI](deathbyai.gg)
+- [Meme, Chat, Robots!](https://memechatrobots.grayhat.studio)
+- [Death by AI](https://deathbyai.gg)
 
 ## Available Scripts
 
